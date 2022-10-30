@@ -3,19 +3,19 @@ import Image from 'next/image';
 Image;
 const about = () => {
   return (
-    <section class='layout min-h-main flex flex-col items-center text-center'>
-      <div class='py-8'>
-        <h1 class='text-4xl font-bold'>About</h1>
-        <div class='space-y-4 py-5'>
+    <section className='layout min-h-main flex flex-col items-center text-center'>
+      <div className='py-8'>
+        <h1 className='text-4xl font-bold'>About</h1>
+        <div className='space-y-4 py-5'>
           <p>
             Inspired by
-            <a class='text-red' href='https://airportcod.es/'>
+            <a className='text-red' href='https://airportcod.es/'>
               {' '}
               Airport Codes
             </a>
             , this website uses the
             <a
-              class='text-red'
+              className='text-red'
               href='https://www.nps.gov/subjects/developer/index.htm'
             >
               {' '}
