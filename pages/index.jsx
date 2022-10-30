@@ -1,12 +1,12 @@
 import Card from '../components/Card';
 
-const Home = ({ data }) => {
-  console.log(data);
+const Home = ({ parks }) => {
+  console.log(parks.data);
   return (
     <section className='min-h-main bg-softWhite'>
       <div className='layout'>
         <div className='grid grid-cols-2 gap-3 py-7'>
-          {data.map((park) => (
+          {parks.data.map((park) => (
             <Card key={park.id} park={park} />
           ))}
         </div>
@@ -16,15 +16,11 @@ const Home = ({ data }) => {
 };
 
 export const getServerSideProps = async () => {
-  try {
-    const response = await fetch(
-      `https://developer.nps.gov/api/v1/parks?limit=2&api_key=${process.env.NEXT_PUBLIC_API_KEY}`
-    );
-    const data = await response.json();
-    return { props: { data: data.data } };
-  } catch (err) {
-    return err;
-  }
+  const response = await fetch(
+    `https://developer.nps.gov/api/v1/parks?limit=2&api_key=${process.env.NEXT_PUBLIC_API_KEY}`
+  );
+  const parks = await response.json();
+  return { props: { parks } };
 };
 
 export default Home;
