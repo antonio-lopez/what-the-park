@@ -1,8 +1,7 @@
 import Card from '../components/Card';
 
 const Home = ({ data }) => {
-  const parks = data;
-  console.log(parks);
+  const parks = data.data;
   return (
     <section className='min-h-main bg-softWhite'>
       <div className='layout'>
@@ -22,7 +21,7 @@ export const getServerSideProps = async () => {
       `https://developer.nps.gov/api/v1/parks?limit=5&api_key=${process.env.NEXT_PUBLIC_API_KEY}`
     );
     const data = await response.json();
-    return { props: data };
+    return { props: { data } };
   } catch (err) {
     return err;
   }
