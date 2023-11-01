@@ -1,3 +1,5 @@
+import Hero from "@/components/containers/Hero";
+
 export default function Home() {
-  return <main className='font-bold'>What The Park</main>;
+  return <Hero />;
 }
