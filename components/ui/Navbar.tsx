@@ -15,7 +15,7 @@ const Navbar = () => {
             alt="what the park logo"
             width={250}
             height={40}
-            objectFit="cover"
+            className="object-cover"
           />
 
           <ul className="hidden space-x-7 text-xl text-backgroundPrimary lg:flex">
