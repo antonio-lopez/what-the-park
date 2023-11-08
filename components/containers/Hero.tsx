@@ -14,7 +14,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 h-full w-full bg-foreground/30"></div>
       <Navbar />
-      <div className="absolute mt-[3.75rem] flex h-full w-full flex-col items-center space-y-3 pt-44">
+      <div className="absolute mt-[3.75rem] flex w-full flex-col items-center space-y-3 pt-44">
         <h1>Explore National Parks</h1>
         <span className="text-xl font-semibold text-backgroundPrimary">
           From Across The United States
