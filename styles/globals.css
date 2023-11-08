@@ -64,4 +64,8 @@
   h1 {
     @apply text-3xl font-extrabold text-backgroundPrimary lg:text-5xl;
   }
+
+  p {
+    @apply text-sm lg:text-base;
+  }
 }
