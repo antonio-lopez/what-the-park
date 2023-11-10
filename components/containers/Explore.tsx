@@ -1,10 +1,11 @@
 import Container from "../Container";
 import { Heading } from "../ui/Heading";
+import ParkCardPrimary from "../ui/ParkCardPrimary";
 import { Button } from "../ui/button";
 
 const Explore = () => {
   return (
-    <section className="h-[43.75rem] w-full bg-backgroundSecondary py-20">
+    <section className="w-full bg-backgroundSecondary py-20">
       <Container>
         <Heading variant={"default"}>
           Discover America&apos;s Story: The National Parks
@@ -20,6 +21,9 @@ const Explore = () => {
         </div>
         <div className="mb-10 flex w-full items-center justify-center">
           <Button>Explore Parks</Button>
+        </div>
+        <div className="grid grid-cols-2 place-items-center gap-5 lg:grid-cols-4 lg:gap-10 lg:px-[5.9375rem]">
+          <ParkCardPrimary />
         </div>
       </Container>
     </section>
