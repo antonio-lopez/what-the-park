@@ -32,10 +32,10 @@ const highlightsCardInfo = [
 
 const Highlights = () => {
   return (
-    <div className="py-20">
+    <div className="mb-6 mt-20 md:mb-12">
       <Container>
         <Heading variant={"default"}>Mastering Park Preparation</Heading>
-        <div className="flex w-full items-center justify-center py-10">
+        <div className="flex w-full items-center justify-center pt-10">
           <div className="grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 md:gap-12">
             <ImageCardPrimary image={highlightsCardInfo[0].image} />
             <InfoCard
