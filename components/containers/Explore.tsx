@@ -1,7 +1,7 @@
 import Container from "../Container";
 import { Heading } from "../ui/Heading";
-import ParkCardPrimary from "../ui/ParkCardPrimary";
 import { Button } from "../ui/button";
+import ExploreParks from "./ExploreParks";
 
 const Explore = () => {
   return (
@@ -23,7 +23,7 @@ const Explore = () => {
           <Button>Explore Parks</Button>
         </div>
         <div className="grid grid-cols-2 place-items-center gap-5 lg:grid-cols-4 lg:gap-10 lg:px-[5.9375rem]">
-          <ParkCardPrimary />
+          <ExploreParks />
         </div>
       </Container>
     </section>
