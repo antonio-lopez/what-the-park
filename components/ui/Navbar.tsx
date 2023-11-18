@@ -22,7 +22,7 @@ const Navbar = () => {
               <Link href={"/"}>Home </Link>
             </li>
             <li className="hover:underline hover:underline-offset-8">
-              <Link href={"/"}>About </Link>
+              <Link href={"/about"}>About </Link>
             </li>
             <li className="hover:underline hover:underline-offset-8">
               <Link href={"/"}>Search </Link>
