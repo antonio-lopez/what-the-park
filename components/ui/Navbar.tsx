@@ -15,9 +15,8 @@ const Navbar = () => {
             alt="what the park logo"
             width={250}
             height={40}
-            className="object-cover"
+            style={{ width: "250px", height: "40px" }}
           />
-
           <ul className="hidden space-x-7 text-xl text-backgroundPrimary lg:flex">
             <li className="hover:underline hover:underline-offset-8">
               <Link href={"/"}>Home </Link>

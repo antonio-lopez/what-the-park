@@ -15,6 +15,7 @@ const ParkCardPrimary = ({ title, image }: ParkProps) => {
         fill={true}
         className="object-cover"
         loading="lazy"
+        sizes="(max-width: 900px) 33vw, 100vw"
       />
       <div className="absolute inset-0 h-full w-full bg-foreground/30"></div>
       <div className="absolute flex h-full w-full items-center justify-center text-backgroundPrimary">

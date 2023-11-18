@@ -14,7 +14,7 @@ const Footer = () => {
               alt="what the park logo"
               width={250}
               height={40}
-              className="object-cover"
+              style={{ width: "250px", height: "40px" }}
             />
             <p className="text-center lg:text-left">
               © Antonio Lopez {new Date().getFullYear()}
@@ -39,6 +39,7 @@ const Footer = () => {
               alt="what the park logo"
               width={150}
               height={195.3}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>

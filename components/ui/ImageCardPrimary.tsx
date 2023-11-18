@@ -14,6 +14,7 @@ const ImageCardPrimary = ({ image }: ImageCardProps) => {
         fill={true}
         className="object-cover"
         loading="lazy"
+        sizes="(max-width: 900px) 33vw, 100vw"
       />
     </Card>
   );
