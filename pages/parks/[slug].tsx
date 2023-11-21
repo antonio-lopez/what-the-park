@@ -1,16 +1,24 @@
 import { NextApiResponse } from "next";
 import { ParksList } from "@/lib/interface";
 import Header from "@/components/parks/Header";
+import GeneralInfo from "@/components/containers/GeneralInfo";
 
 const Park = ({ parks }: ParksList) => {
   console.log(parks);
   return (
-    <Header
-      images={parks[0].images}
-      fullName={parks[0].fullName}
-      contacts={parks[0].contacts}
-      address={parks[0].addresses}
-    />
+    <>
+      <Header
+        images={parks[0].images}
+        fullName={parks[0].fullName}
+        contacts={parks[0].contacts}
+        address={parks[0].addresses}
+      />
+      <GeneralInfo
+        images={parks[0].images}
+        description={parks[0].description}
+        weatherInfo={parks[0].weatherInfo}
+      />
+    </>
   );
 };
 
