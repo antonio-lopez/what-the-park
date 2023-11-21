@@ -10,7 +10,7 @@ const ImageCardPrimary = ({ image }: ImageCardProps) => {
     <Card className="relative h-[20.625rem] w-[22.3125rem] lg:h-[25rem] lg:w-[28.125rem]">
       <Image
         src={image}
-        alt="sdfs"
+        alt="park highlights"
         fill={true}
         className="object-cover"
         loading="lazy"
