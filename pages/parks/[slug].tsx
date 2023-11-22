@@ -2,6 +2,7 @@ import { NextApiResponse } from "next";
 import { ParksList } from "@/lib/interface";
 import Header from "@/components/parks/Header";
 import GeneralInfo from "@/components/containers/GeneralInfo";
+import MoreInfo from "@/components/containers/MoreInfo";
 
 const Park = ({ parks }: ParksList) => {
   console.log(parks);
@@ -18,6 +19,7 @@ const Park = ({ parks }: ParksList) => {
         description={parks[0].description}
         weatherInfo={parks[0].weatherInfo}
       />
+      <MoreInfo activities={parks[0].activities} topics={parks[0].topics} />
     </>
   );
 };
