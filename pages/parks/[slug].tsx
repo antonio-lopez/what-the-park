@@ -10,28 +10,28 @@ const Park = ({ parks }: ParksList) => {
   return (
     <>
       <Header
-        images={parks[1].images}
-        fullName={parks[1].fullName}
-        contacts={parks[1].contacts}
-        address={parks[1].addresses}
+        images={parks[0].images}
+        fullName={parks[0].fullName}
+        contacts={parks[0].contacts}
+        address={parks[0].addresses}
       />
       <GeneralInfo
-        images={parks[1].images}
-        description={parks[1].description}
-        weatherInfo={parks[1].weatherInfo}
+        images={parks[0].images}
+        description={parks[0].description}
+        weatherInfo={parks[0].weatherInfo}
       />
       <MoreInfo
-        activities={parks[1].activities}
-        topics={parks[1].topics}
-        entranceFees={parks[1].entranceFees}
+        activities={parks[0].activities}
+        topics={parks[0].topics}
+        entranceFees={parks[0].entranceFees}
       />
       <Route
-        directionsInfo={parks[1].directionsInfo}
-        directionsUrl={parks[1].directionsUrl}
-        latitude={parks[1].latitude}
-        longitude={parks[1].longitude}
-        latLong={parks[1].latLong}
-        addresses={parks[1].addresses}
+        directionsInfo={parks[0].directionsInfo}
+        directionsUrl={parks[0].directionsUrl}
+        latitude={parks[0].latitude}
+        longitude={parks[0].longitude}
+        latLong={parks[0].latLong}
+        addresses={parks[0].addresses}
       />
     </>
   );
