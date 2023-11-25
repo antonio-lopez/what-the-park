@@ -3,6 +3,7 @@ import { ParksList } from "@/lib/interface";
 import Header from "@/components/parks/Header";
 import GeneralInfo from "@/components/containers/GeneralInfo";
 import MoreInfo from "@/components/containers/MoreInfo";
+import Route from "@/components/containers/Route";
 
 const Park = ({ parks }: ParksList) => {
   console.log(parks);
@@ -23,6 +24,14 @@ const Park = ({ parks }: ParksList) => {
         activities={parks[1].activities}
         topics={parks[1].topics}
         entranceFees={parks[1].entranceFees}
+      />
+      <Route
+        directionsInfo={parks[1].directionsInfo}
+        directionsUrl={parks[1].directionsUrl}
+        latitude={parks[1].latitude}
+        longitude={parks[1].longitude}
+        latLong={parks[1].latLong}
+        addresses={parks[1].addresses}
       />
     </>
   );
