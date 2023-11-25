@@ -53,7 +53,7 @@ const Route = ({
             <p>{latLong}</p>
             <span>
               <a
-                className="underline"
+                className="text-sm underline md:text-base"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={directionsUrl}

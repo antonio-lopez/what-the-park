@@ -20,7 +20,7 @@ const GeneralInfo = ({
   return (
     <section className="py-20">
       <Container>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-[28.125rem_,1fr]">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[28.125rem_,1fr]">
           <ImageCardTertiary
             url={parkImagePrimary.url}
             altText={parkImagePrimary.altText}

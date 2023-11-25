@@ -32,7 +32,7 @@ const LocationCard = ({ icon, city, stateCode }: IconProps) => {
     <div className="flex h-[6.875rem] justify-center bg-primaryDark px-3 text-white">
       <div className="flex w-full items-center justify-center space-x-3">
         <div>{icon}</div>
-        <p className="text-lg font-semibold">
+        <p className="text-base font-semibold md:text-lg">
           {city}, {stateCode}
         </p>
       </div>

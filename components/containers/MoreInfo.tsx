@@ -49,7 +49,7 @@ const MoreInfo = ({ activities, topics, entranceFees }: MoreInfoProps) => {
                       <TableCell>{fees.title}</TableCell>
                       <TableCell>${fees.cost}</TableCell>
                       <TableCell>
-                        <p className="whitespace-nowrap lg:whitespace-normal">
+                        <p className="whitespace-nowrap md:whitespace-normal">
                           {fees.description}
                         </p>
                       </TableCell>
