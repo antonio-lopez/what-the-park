@@ -9,17 +9,21 @@ const Park = ({ parks }: ParksList) => {
   return (
     <>
       <Header
-        images={parks[0].images}
-        fullName={parks[0].fullName}
-        contacts={parks[0].contacts}
-        address={parks[0].addresses}
+        images={parks[1].images}
+        fullName={parks[1].fullName}
+        contacts={parks[1].contacts}
+        address={parks[1].addresses}
       />
       <GeneralInfo
-        images={parks[0].images}
-        description={parks[0].description}
-        weatherInfo={parks[0].weatherInfo}
+        images={parks[1].images}
+        description={parks[1].description}
+        weatherInfo={parks[1].weatherInfo}
       />
-      <MoreInfo activities={parks[0].activities} topics={parks[0].topics} />
+      <MoreInfo
+        activities={parks[1].activities}
+        topics={parks[1].topics}
+        entranceFees={parks[1].entranceFees}
+      />
     </>
   );
 };
