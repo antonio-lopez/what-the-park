@@ -34,28 +34,34 @@ const MoreInfo = ({ activities, topics, entranceFees }: MoreInfoProps) => {
           </div>
           <div>
             <Heading className="mb-5">Entrance Fees</Heading>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Type</TableHead>
-                  <TableHead>Cost</TableHead>
-                  <TableHead>Description</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {entranceFees?.map((fees) => (
-                  <TableRow key={fees.title}>
-                    <TableCell>{fees.title}</TableCell>
-                    <TableCell>${fees.cost}</TableCell>
-                    <TableCell>
-                      <p className="whitespace-nowrap lg:whitespace-normal">
-                        {fees.description}
-                      </p>
-                    </TableCell>
+            {entranceFees?.length ? (
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Type</TableHead>
+                    <TableHead>Cost</TableHead>
+                    <TableHead>Description</TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {entranceFees?.map((fees) => (
+                    <TableRow key={fees.title}>
+                      <TableCell>{fees.title}</TableCell>
+                      <TableCell>${fees.cost}</TableCell>
+                      <TableCell>
+                        <p className="whitespace-nowrap lg:whitespace-normal">
+                          {fees.description}
+                        </p>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="text-center">
+                There is no fee associated with visiting this park.
+              </p>
+            )}
           </div>
         </div>
       </Container>
