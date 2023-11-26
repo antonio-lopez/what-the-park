@@ -7,31 +7,47 @@ import Route from "@/components/containers/Route";
 import Footer from "@/components/ui/Footer";
 
 const Park = ({ parks }: ParksList) => {
+  const {
+    images,
+    fullName,
+    contacts,
+    addresses,
+    description,
+    weatherInfo,
+    activities,
+    topics,
+    entranceFees,
+    directionsInfo,
+    directionsUrl,
+    latitude,
+    longitude,
+    latLong,
+  } = parks[0];
   return (
     <>
       <Header
-        images={parks[0].images}
-        fullName={parks[0].fullName}
-        contacts={parks[0].contacts}
-        address={parks[0].addresses}
+        images={images}
+        fullName={fullName}
+        contacts={contacts}
+        address={addresses}
       />
       <GeneralInfo
-        images={parks[0].images}
-        description={parks[0].description}
-        weatherInfo={parks[0].weatherInfo}
+        images={images}
+        description={description}
+        weatherInfo={weatherInfo}
       />
       <MoreInfo
-        activities={parks[0].activities}
-        topics={parks[0].topics}
-        entranceFees={parks[0].entranceFees}
+        activities={activities}
+        topics={topics}
+        entranceFees={entranceFees}
       />
       <Route
-        directionsInfo={parks[0].directionsInfo}
-        directionsUrl={parks[0].directionsUrl}
-        latitude={parks[0].latitude}
-        longitude={parks[0].longitude}
-        latLong={parks[0].latLong}
-        addresses={parks[0].addresses}
+        directionsInfo={directionsInfo}
+        directionsUrl={directionsUrl}
+        latitude={latitude}
+        longitude={longitude}
+        latLong={latLong}
+        addresses={addresses}
       />
       <Footer />
     </>
