@@ -15,6 +15,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import ParkCardSeconday from "@/components/ui/ParkCardSeconday";
+import { Address, Images } from "@/lib/interface";
 
 const statesArray = [
   { stateCode: "AL", state: "Alabama" },
@@ -75,7 +77,7 @@ const formSchema = z.object({
 });
 
 const Index = () => {
-  const [parks, setParks] = useState<any>({});
+  const [parks, setParks] = useState<any>([]);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -90,11 +92,14 @@ const Index = () => {
     const parkFetch = await fetch(
       `https://developer.nps.gov/api/v1/parks?stateCode=${data.stateCode}&q=${data.q}&api_key=${process.env.NEXT_PUBLIC_NPS_API}`,
     );
-    console.log(parkFetch);
+    // console.log(parkFetch);
     const parksData = await parkFetch.json();
-    setParks(parksData);
-    console.log(parksData);
+    setParks(parksData.data);
+    // console.log(parksData.data);
+    // console.log(parks);
   };
+
+  console.log(parks);
 
   return (
     <>
@@ -110,9 +115,12 @@ const Index = () => {
         <div className="absolute mt-[3.75rem] flex w-full flex-col items-center space-y-3 pt-20 lg:pt-32">
           <div className="layout">
             <h1 className="mb-10 text-center lg:mb-20">Parks</h1>
-            <div className="mx-auto h-28 w-full bg-red-400 md:w-4/5">
+            <div className="mx-auto flex h-28 w-full items-center justify-center bg-secondary md:w-4/5">
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)}>
+                <form
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="flex w-full justify-center space-x-3"
+                >
                   <FormField
                     control={form.control}
                     name="stateCode"
@@ -121,7 +129,7 @@ const Index = () => {
                         <div className="w-80">
                           <Select onValueChange={field.onChange}>
                             <FormControl>
-                              <SelectTrigger>
+                              <SelectTrigger className="bg-white">
                                 <SelectValue placeholder="Select a state" />
                               </SelectTrigger>
                             </FormControl>
@@ -145,24 +153,44 @@ const Index = () => {
                     name="q"
                     render={({ field }) => (
                       <FormItem>
-                        <div className="w-80">
+                        <div className="w-[31.25rem]">
                           <FormControl>
-                            <Input {...field} />
+                            <Input placeholder="Search..." {...field} />
                           </FormControl>
                         </div>
                       </FormItem>
                     )}
                   />
-                  <Button disabled={form.formState.isSubmitting} type="submit">
+                  <Button
+                    disabled={form.formState.isSubmitting}
+                    type="submit"
+                    size={"sm"}
+                  >
                     Search
                   </Button>
                 </form>
               </Form>
-              {form.formState.isLoading ? <h1>yo</h1> : JSON.stringify(parks)}
+              {/* {form.formState.isLoading ? <h1>yo</h1> : JSON.stringify(parks)} */}
             </div>
           </div>
         </div>
       </header>
+
+      <section className="bg-backgroundSecondary py-20">
+        <div className="layout">
+          <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {parks.map((park: any) => (
+              <ParkCardSeconday
+                key={park.parkCode}
+                name={park.name}
+                addresses={park.addresses}
+                images={park.images}
+                parkCode={park.parkCode}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };
