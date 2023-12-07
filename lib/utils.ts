@@ -1,6 +1,59 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
- 
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
+
+export const statesArray = [
+  { stateCode: "AL", state: "Alabama" },
+  { stateCode: "AK", state: "Alaska" },
+  { stateCode: "AZ", state: "Arizona" },
+  { stateCode: "AR", state: "Arkansas" },
+  { stateCode: "CA", state: "California" },
+  { stateCode: "CO", state: "Colorado" },
+  { stateCode: "CT", state: "Connecticut" },
+  { stateCode: "DE", state: "Delaware" },
+  { stateCode: "FL", state: "Florida" },
+  { stateCode: "GA", state: "Georgia" },
+  { stateCode: "HI", state: "Hawaii" },
+  { stateCode: "ID", state: "Idaho" },
+  { stateCode: "IL", state: "Illinois" },
+  { stateCode: "IN", state: "Indiana" },
+  { stateCode: "IA", state: "Iowa" },
+  { stateCode: "KS", state: "Kansas" },
+  { stateCode: "KY", state: "Kentucky" },
+  { stateCode: "LA", state: "Louisiana" },
+  { stateCode: "ME", state: "Maine" },
+  { stateCode: "MD", state: "Maryland" },
+  { stateCode: "MA", state: "Massachusetts" },
+  { stateCode: "MI", state: "Michigan" },
+  { stateCode: "MN", state: "Minnesota" },
+  { stateCode: "MS", state: "Mississippi" },
+  { stateCode: "MO", state: "Missouri" },
+  { stateCode: "MT", state: "Montana" },
+  { stateCode: "NE", state: "Nebraska" },
+  { stateCode: "NV", state: "Nevada" },
+  { stateCode: "NH", state: "New Hampshire" },
+  { stateCode: "NJ", state: "New Jersey" },
+  { stateCode: "NM", state: "New Mexico" },
+  { stateCode: "NY", state: "New York" },
+  { stateCode: "NC", state: "North Carolina" },
+  { stateCode: "ND", state: "North Dakota" },
+  { stateCode: "OH", state: "Ohio" },
+  { stateCode: "OK", state: "Oklahoma" },
+  { stateCode: "OR", state: "Oregon" },
+  { stateCode: "PA", state: "Pennsylvania" },
+  { stateCode: "RI", state: "Rhode Island" },
+  { stateCode: "SC", state: "South Carolina" },
+  { stateCode: "SD", state: "South Dakota" },
+  { stateCode: "TN", state: "Tennessee" },
+  { stateCode: "TX", state: "Texas" },
+  { stateCode: "UT", state: "Utah" },
+  { stateCode: "VT", state: "Vermont" },
+  { stateCode: "VA", state: "Virginia" },
+  { stateCode: "WA", state: "Washington" },
+  { stateCode: "WV", state: "West Virginia" },
+  { stateCode: "WI", state: "Wisconsin" },
+  { stateCode: "WY", state: "Wyoming" },
+];
