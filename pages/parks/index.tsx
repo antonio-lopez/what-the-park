@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { statesArray } from "@/lib/utils";
 import ParksQuery from "@/components/containers/ParksQuery";
 import Loading from "@/components/ui/Loading";
+import Footer from "@/components/ui/Footer";
 
 const formSchema = z.object({
   stateCode: z.string().min(2).max(50),
@@ -119,6 +120,7 @@ const Index = () => {
       </header>
 
       {form.formState.isSubmitting ? <Loading /> : <ParksQuery parks={parks} />}
+      <Footer />
     </>
   );
 };
