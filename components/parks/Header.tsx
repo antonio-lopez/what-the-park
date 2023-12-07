@@ -13,7 +13,7 @@ interface HeaderProps {
 }
 
 const Header = ({ images, fullName, contacts, address }: HeaderProps) => {
-  const phoneNumber = contacts.phoneNumbers[0].phoneNumber.replace(
+  const phoneNumber = contacts.phoneNumbers[0]?.phoneNumber.replace(
     /^(\d{3})(\d{3})(\d{4})/,
     "$1-$2-$3",
   );
