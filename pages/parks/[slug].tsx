@@ -64,7 +64,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     "public, s-maxage=3600, stale-while-revalidate=7200",
   );
   const data = await fetch(
-    `https://developer.nps.gov/api/v1/parks?parkCode=${slug}&api_key=${process.env.NPS_API}`,
+    `https://developer.nps.gov/api/v1/parks?parkCode=${slug}&api_key=${process.env.NEXT_PUBLIC_NPS_API}`,
   );
   const parks = await data.json();
 
