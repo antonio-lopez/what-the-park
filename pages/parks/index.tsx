@@ -115,18 +115,18 @@ const Index = () => {
         <div className="absolute mt-[3.75rem] flex w-full flex-col items-center space-y-3 pt-20 lg:pt-32">
           <div className="layout">
             <h1 className="mb-10 text-center lg:mb-20">Parks</h1>
-            <div className="mx-auto flex h-28 w-full items-center justify-center bg-secondary md:w-4/5">
+            <div className="mx-auto flex h-[10.75rem] w-full items-center justify-center bg-secondary md:w-4/5 lg:h-28">
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="flex w-full justify-center space-x-3"
+                  className="flex w-full flex-col items-center justify-center space-y-3 px-5 lg:flex-row lg:space-x-3 lg:space-y-0"
                 >
                   <FormField
                     control={form.control}
                     name="stateCode"
                     render={({ field }) => (
-                      <FormItem>
-                        <div className="w-80">
+                      <FormItem className="w-full lg:w-80">
+                        <div className="w-full lg:w-80">
                           <Select onValueChange={field.onChange}>
                             <FormControl>
                               <SelectTrigger className="bg-white">
@@ -148,29 +148,30 @@ const Index = () => {
                       </FormItem>
                     )}
                   />
-                  <FormField
-                    control={form.control}
-                    name="q"
-                    render={({ field }) => (
-                      <FormItem>
-                        <div className="w-[31.25rem]">
-                          <FormControl>
-                            <Input placeholder="Search..." {...field} />
-                          </FormControl>
-                        </div>
-                      </FormItem>
-                    )}
-                  />
-                  <Button
-                    disabled={form.formState.isSubmitting}
-                    type="submit"
-                    size={"sm"}
-                  >
-                    Search
-                  </Button>
+                  <div className="flex w-full space-x-3 lg:w-fit ">
+                    <FormField
+                      control={form.control}
+                      name="q"
+                      render={({ field }) => (
+                        <FormItem className="w-full">
+                          <div className="w-full lg:w-[31.25rem]">
+                            <FormControl>
+                              <Input placeholder="Search..." {...field} />
+                            </FormControl>
+                          </div>
+                        </FormItem>
+                      )}
+                    />
+                    <Button
+                      disabled={form.formState.isSubmitting}
+                      type="submit"
+                      size={"sm"}
+                    >
+                      Search
+                    </Button>
+                  </div>
                 </form>
               </Form>
-              {/* {form.formState.isLoading ? <h1>yo</h1> : JSON.stringify(parks)} */}
             </div>
           </div>
         </div>
