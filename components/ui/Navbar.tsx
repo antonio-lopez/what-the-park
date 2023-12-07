@@ -25,7 +25,7 @@ const Navbar = () => {
               <Link href={"/about"}>About </Link>
             </li>
             <li className="hover:underline hover:underline-offset-8">
-              <Link href={"/"}>Search </Link>
+              <Link href={"/parks"}>Search </Link>
             </li>
           </ul>
 
