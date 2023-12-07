@@ -22,16 +22,16 @@ const GeneralInfo = ({
       <Container>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[28.125rem_,1fr]">
           <ImageCardTertiary
-            url={parkImagePrimary.url}
-            altText={parkImagePrimary.altText}
+            url={parkImagePrimary?.url}
+            altText={parkImagePrimary?.altText}
           />
           <div>
             <Heading className="mb-3 justify-start">About</Heading>
             <p>{description}</p>
           </div>
           <ImageCardTertiary
-            url={parkImageSecondary.url}
-            altText={parkImageSecondary.altText}
+            url={parkImageSecondary?.url}
+            altText={parkImageSecondary?.altText}
           />
           <div>
             <Heading className="mb-3 justify-start">Weather</Heading>
