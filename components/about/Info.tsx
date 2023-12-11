@@ -19,7 +19,7 @@ const Info = () => {
   return (
     <section className="my-20">
       <Container>
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-x-10">
+        <div className="grid grid-cols-1 gap-5 overflow-hidden lg:grid-cols-2 lg:gap-x-10">
           <div>
             <Heading className="mb-3 justify-start">National Park</Heading>
             <p>
