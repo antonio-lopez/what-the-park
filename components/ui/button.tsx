@@ -11,8 +11,7 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-primaryMedium text-backgroundPrimary hover:bg-primaryMedium/90",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        secondary: "bg-transparent",
       },
       size: {
         default: "h-12 px-6 py-2",
