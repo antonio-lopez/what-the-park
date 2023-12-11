@@ -11,7 +11,7 @@ const EmailCard = ({ icon, emailAddress }: IconProps) => {
     <div className="flex h-[6.875rem] justify-center bg-primaryDark px-3 text-white">
       <div className="flex w-full items-center justify-center space-x-3 overflow-auto">
         <div>{icon}</div>
-        <p className="text-lg font-semibold">{emailAddress}</p>
+        <p className="font-semibold">{emailAddress}</p>
       </div>
     </div>
   );
@@ -22,7 +22,7 @@ const PhoneCard = ({ icon, phoneNumber }: IconProps) => {
     <div className="flex h-[6.875rem] justify-center bg-primaryDark px-3 text-white">
       <div className="flex w-full items-center justify-center space-x-3">
         <div>{icon}</div>
-        <p className="text-lg font-semibold">{phoneNumber}</p>
+        <p className="font-semibold">{phoneNumber}</p>
       </div>
     </div>
   );
@@ -32,7 +32,7 @@ const LocationCard = ({ icon, city, stateCode }: IconProps) => {
     <div className="flex h-[6.875rem] justify-center bg-primaryDark px-3 text-white">
       <div className="flex w-full items-center justify-center space-x-3">
         <div>{icon}</div>
-        <p className="text-base font-semibold md:text-lg">
+        <p className="font-semibold">
           {city}, {stateCode}
         </p>
       </div>
