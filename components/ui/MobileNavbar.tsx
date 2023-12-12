@@ -32,6 +32,7 @@ const MobileNavbar = ({ onClick, isOpen }: ButtonProps) => {
             variant="secondary"
             size="icon"
             className="md:hidden"
+            aria-label="menu close"
           >
             <IoMdClose className="h-10 w-10 text-backgroundPrimary transition-all md:hidden" />
           </Button>

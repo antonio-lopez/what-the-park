@@ -46,6 +46,7 @@ const Navbar = () => {
             variant="secondary"
             size="icon"
             className="md:hidden"
+            aria-label="menu open"
           >
             <BiMenuAltRight className="h-10 w-10 text-backgroundPrimary transition-all md:hidden" />
           </Button>
