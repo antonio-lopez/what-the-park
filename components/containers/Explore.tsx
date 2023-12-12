@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../Container";
 import { Heading } from "../ui/Heading";
 import { Button } from "../ui/button";
@@ -20,7 +21,9 @@ const Explore = () => {
           </p>
         </div>
         <div className="mb-10 flex w-full items-center justify-center">
-          <Button>Explore Parks</Button>
+          <Button asChild>
+            <Link href={"/parks"}>Explore Parks</Link>
+          </Button>
         </div>
         <div className="grid grid-cols-2 place-items-center gap-5 lg:grid-cols-4 lg:gap-10 lg:px-[5.9375rem]">
           <ExploreParks />

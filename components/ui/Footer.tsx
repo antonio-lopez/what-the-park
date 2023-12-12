@@ -21,14 +21,39 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex w-full justify-between lg:col-span-2">
-            <div className="flex flex-col space-y-8 lg:space-y-16">
-              <p>Github</p>
-              <p>Portfolio</p>
-              <p>LinkedIn</p>
+            <div className="flex flex-col space-y-8 text-sm lg:space-y-16 lg:text-base">
+              <a
+                className="hover:underline hover:underline-offset-8"
+                href="https://github.com/antonio-lopez"
+              >
+                Github
+              </a>
+              <a
+                className="hover:underline hover:underline-offset-8"
+                href="https://www.antoniolopez.me/"
+              >
+                Portfolio
+              </a>
+              <a
+                className="hover:underline hover:underline-offset-8"
+                href="https://www.linkedin.com/in/antoniolopez6/"
+              >
+                LinkedIn
+              </a>
             </div>
-            <div className="flex flex-col space-y-8 lg:space-y-16">
-              <p>National Parks API</p>
-              <p>National Park Service</p>
+            <div className="flex flex-col space-y-8 text-sm lg:space-y-16 lg:text-base">
+              <a
+                className="hover:underline hover:underline-offset-8"
+                href="https://www.nps.gov/subjects/developer/api-documentation.htm"
+              >
+                National Parks API
+              </a>
+              <a
+                className="hover:underline hover:underline-offset-8"
+                href="https://www.nps.gov/index.htm"
+              >
+                National Park Service
+              </a>
             </div>
           </div>
           <div className="relative my-10 justify-center lg:col-span-4 lg:my-0 lg:justify-self-end">
