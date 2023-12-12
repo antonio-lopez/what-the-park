@@ -11,6 +11,7 @@ const Header = () => {
         alt="national park mountains"
         fill={true}
         className="object-cover"
+        priority={true}
       />
       <div className="absolute inset-0 h-full w-full bg-foreground/30"></div>
       <Navbar />
