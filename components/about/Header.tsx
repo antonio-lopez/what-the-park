@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="relative h-[43.75rem] w-full">
+    <header className="relative h-[100dvh] w-full 2xl:h-[43.75rem]">
       <Image
         src={
           "https://res.cloudinary.com/dloisor1x/image/upload/v1700337540/what-the-park/joshua-gresham-hb2nxexIy2k-unsplash_ixqyxr.webp"

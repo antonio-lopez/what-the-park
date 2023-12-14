@@ -22,7 +22,7 @@ const Header = ({ images, fullName, contacts, address }: HeaderProps) => {
   const stateCode = address[0].stateCode;
 
   return (
-    <header className="relative h-[43.75rem] w-full">
+    <header className="relative h-[100dvh] w-full 2xl:h-[43.75rem]">
       <Image
         src={images[0].url}
         alt={images[0].altText}

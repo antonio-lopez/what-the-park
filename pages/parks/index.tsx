@@ -45,7 +45,7 @@ const Index = () => {
 
   return (
     <>
-      <header className="relative h-[43.75rem] w-full">
+      <header className="relative h-[100dvh] w-full 2xl:h-[43.75rem]">
         <Image
           src="https://res.cloudinary.com/dloisor1x/image/upload/v1700969386/what-the-park/jason-thompson-dS3UnDX6InQ-unsplash_l4eckd.webp"
           alt="park mountains"
@@ -55,7 +55,7 @@ const Index = () => {
         />
         <div className="absolute inset-0 h-full w-full bg-foreground/30"></div>
         <Navbar />
-        <div className="absolute mt-[3.75rem] flex w-full flex-col items-center space-y-3 pt-20 lg:pt-32">
+        <div className="absolute mt-20 flex w-full flex-col items-center space-y-3 pt-20 lg:pt-32">
           <div className="layout">
             <h1 className="mb-10 text-center lg:mb-20">Parks</h1>
             <div className="mx-auto flex h-[10.75rem] w-full items-center justify-center bg-secondary md:w-4/5 lg:h-28">

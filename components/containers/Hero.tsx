@@ -3,7 +3,7 @@ import Navbar from "../ui/Navbar";
 
 const Hero = () => {
   return (
-    <header className="relative h-[43.75rem] w-full">
+    <header className="relative h-[100dvh] w-full 2xl:h-[43.75rem]">
       <Image
         src={
           "https://res.cloudinary.com/dloisor1x/image/upload/v1698705215/what-the-park/dave-herring-C_A13XI4PY8-unsplash_cvm1wy.webp"
