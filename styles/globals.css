@@ -69,3 +69,10 @@
     @apply text-sm lg:text-base;
   }
 }
+
+@layer utilities {
+  .h-fallback-screen {
+    height: 100vh; /* fallback for Opera, IE and etc. */
+    height: 100svh;
+  }
+}

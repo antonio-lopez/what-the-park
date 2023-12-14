@@ -45,7 +45,7 @@ const Index = () => {
 
   return (
     <>
-      <header className="relative h-[100dvh] w-full 2xl:h-[43.75rem]">
+      <header className="h-fallback-screen relative w-full 2xl:h-[43.75rem]">
         <Image
           src="https://res.cloudinary.com/dloisor1x/image/upload/v1700969386/what-the-park/jason-thompson-dS3UnDX6InQ-unsplash_l4eckd.webp"
           alt="park mountains"
