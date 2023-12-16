@@ -14,7 +14,7 @@ const ParkCardSeconday = ({ parkCode, addresses, images, name }: ParkProps) => {
   const location = addresses[0].city + ", " + addresses[0].stateCode;
 
   return (
-    <Card className="h-[23.625rem] w-full rounded-md bg-white p-6 lg:h-[23.625rem] lg:w-[24.5625rem]">
+    <Card className="h-[23.625rem] w-full rounded-md bg-white p-6 transition duration-300 ease-in-out hover:shadow-xl lg:h-[23.625rem] lg:w-[24.5625rem]">
       <Link href={`/parks/${parkCode}`}>
         <div className="relative mb-6 h-[15.625rem] w-full">
           <Image
