@@ -58,7 +58,7 @@ const Route = ({
                 rel="noopener noreferrer"
                 href={directionsUrl}
               >
-                More information
+                Alternate routes, methods, and alerts for destination.
               </a>
             </span>
           </div>

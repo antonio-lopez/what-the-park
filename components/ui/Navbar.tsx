@@ -26,6 +26,7 @@ const Navbar = () => {
               alt="what the park logo"
               width={250}
               height={40}
+              priority
               style={{ width: "250px", height: "40px" }}
             />
           </Link>

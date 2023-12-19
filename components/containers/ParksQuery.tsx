@@ -16,9 +16,9 @@ const ParksQuery = ({ parks }: any) => {
               />
             ))
           ) : (
-            <h3 className="item col-span-3 text-xl font-semibold lg:text-2xl">
+            <p className="col-span-3 items-center text-xl font-semibold lg:text-2xl">
               No search results found
-            </h3>
+            </p>
           )}
         </div>
       </div>
