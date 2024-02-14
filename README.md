@@ -18,6 +18,8 @@
 
 I utilized the National Park Service's API to develop a website that retrieves and presents park data in a straightforward, filtered, and easily readable format. The data is fetched from both the client and server sides, adhering to a type-safe schema through the Zod validator. The park coordinates are integrated into the Leaflet JS map, an open-source tool, to visually represent their locations. To enhance my design system and wireframing skills, I employed Figma to create a functional prototype before entering the development phase. During development, I incorporated a new open-source component library called Shadcn UI, which not only expedited the process but also allowed for customization of components to align with my design system.
 
+> To delve deeper into my development process, feel free to visit my website for a [comprehensive explanation](https://www.antoniolopez.me/projects/what-the-park).
+
 ### Highlights
 
 - Search for parks by state
